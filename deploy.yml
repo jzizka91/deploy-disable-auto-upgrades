@@ -1,0 +1,13 @@
+---
+
+- hosts: all
+  gather_facts: false
+  tasks:
+    - name: Copy settings to disable automatic upgrades
+      copy:
+        src: ./config/20auto-upgrades
+        dest: /etc/apt/apt.conf.d/20auto-upgrades
+        owner: root
+        group: root
+        mode: 0644
+

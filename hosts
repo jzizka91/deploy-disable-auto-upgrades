@@ -1,0 +1,5 @@
+[nodes]
+<nod1-domain> ansible_user=root  
+<nod2-domain> ansible_user=root             
+<nod3-domain> ansible_user=root             
+<nod4-domain> ansible_user=root
